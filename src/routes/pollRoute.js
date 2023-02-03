@@ -1,5 +1,5 @@
 import { Router } from "express"
-import { pollValidationSchema } from "../middlewares/validateSchema.js"
+import { pollValidationSchema } from "../middlewares/validatePollSchema.js"
 import { postPoll, getPoll} from "../controllers/pollController.js"
 
 
