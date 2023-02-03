@@ -13,5 +13,5 @@ app.use(express.json())
 app.use(pollRoutes);
 app.use(choiceRoutes)
 
-
-app.listen(5000, () => console.log(`Servidor rodando na porta 5000`))
+const port = process.env.PORT
+app.listen(port, () => console.log(`Servidor rodando na porta: ${port}`))

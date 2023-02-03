@@ -28,7 +28,7 @@ export async function postChoice(req,res){
     await choiceCollection.insertOne(choice);
     }catch (err) {return res.status(500)};
 
-    res.status(201).send(`Opção "${choice.title}" adicionada à enquete "${currentPool.title}" com sucesso!`);
+    res.status(201).send(`Opção adicionada à enquete com sucesso!`);
 }
 
 
