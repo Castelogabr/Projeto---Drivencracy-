@@ -6,8 +6,10 @@ const mongoClient = new MongoClient(process.env.MONGO_URI)
 
 try {
     await mongoClient.connect()
-    console.log("Mongo rodando")
+    console.log("MongoDb Conectado")
 } catch (err) {
     console.log(err)
 }
 
+export const db = mongoClient.db("drivenCracy");
+export const pollCollection  = db.collection("poll");
